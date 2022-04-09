@@ -24,11 +24,17 @@ namespace EasyMute
 
             try
             {
+                if (Environment.OSVersion.Version.Major >= 6)
+                    SetProcessDPIAware();
+
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.Run(new AppContext());
             }
             finally { _Mutex.ReleaseMutex(); }
         }
+
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        private static extern bool SetProcessDPIAware();
     }
 }

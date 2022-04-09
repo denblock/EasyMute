@@ -59,7 +59,7 @@
             // 
             // SaveBtn
             // 
-            this.SaveBtn.Location = new System.Drawing.Point(76, 235);
+            this.SaveBtn.Location = new System.Drawing.Point(59, 235);
             this.SaveBtn.Name = "SaveBtn";
             this.SaveBtn.Size = new System.Drawing.Size(149, 36);
             this.SaveBtn.TabIndex = 2;
@@ -70,7 +70,7 @@
             // CancelBtn
             // 
             this.CancelBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.CancelBtn.Location = new System.Drawing.Point(234, 235);
+            this.CancelBtn.Location = new System.Drawing.Point(224, 235);
             this.CancelBtn.Name = "CancelBtn";
             this.CancelBtn.Size = new System.Drawing.Size(149, 36);
             this.CancelBtn.TabIndex = 3;
@@ -123,7 +123,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.CancelBtn;
-            this.ClientSize = new System.Drawing.Size(460, 297);
+            this.ClientSize = new System.Drawing.Size(435, 287);
             this.Controls.Add(this.SoundsCheckBox);
             this.Controls.Add(this.NotificationsCheckBox);
             this.Controls.Add(this.HotKeyTextBox);
