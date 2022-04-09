@@ -35,6 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.HotKeyTextBox = new System.Windows.Forms.TextBox();
             this.NotificationsCheckBox = new System.Windows.Forms.CheckBox();
+            this.SoundsCheckBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -58,7 +59,7 @@
             // 
             // SaveBtn
             // 
-            this.SaveBtn.Location = new System.Drawing.Point(76, 201);
+            this.SaveBtn.Location = new System.Drawing.Point(76, 235);
             this.SaveBtn.Name = "SaveBtn";
             this.SaveBtn.Size = new System.Drawing.Size(149, 36);
             this.SaveBtn.TabIndex = 2;
@@ -69,7 +70,7 @@
             // CancelBtn
             // 
             this.CancelBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.CancelBtn.Location = new System.Drawing.Point(234, 201);
+            this.CancelBtn.Location = new System.Drawing.Point(234, 235);
             this.CancelBtn.Name = "CancelBtn";
             this.CancelBtn.Size = new System.Drawing.Size(149, 36);
             this.CancelBtn.TabIndex = 3;
@@ -97,7 +98,7 @@
             // NotificationsCheckBox
             // 
             this.NotificationsCheckBox.AutoSize = true;
-            this.NotificationsCheckBox.Location = new System.Drawing.Point(107, 148);
+            this.NotificationsCheckBox.Location = new System.Drawing.Point(107, 185);
             this.NotificationsCheckBox.Name = "NotificationsCheckBox";
             this.NotificationsCheckBox.Size = new System.Drawing.Size(213, 24);
             this.NotificationsCheckBox.TabIndex = 7;
@@ -105,13 +106,25 @@
             this.NotificationsCheckBox.UseVisualStyleBackColor = true;
             this.NotificationsCheckBox.CheckedChanged += new System.EventHandler(this.NotificationsCheckBox_CheckedChanged);
             // 
+            // SoundsCheckBox
+            // 
+            this.SoundsCheckBox.AutoSize = true;
+            this.SoundsCheckBox.Location = new System.Drawing.Point(107, 145);
+            this.SoundsCheckBox.Name = "SoundsCheckBox";
+            this.SoundsCheckBox.Size = new System.Drawing.Size(126, 24);
+            this.SoundsCheckBox.TabIndex = 8;
+            this.SoundsCheckBox.Text = "Sounds aktiv";
+            this.SoundsCheckBox.UseVisualStyleBackColor = true;
+            this.SoundsCheckBox.CheckedChanged += new System.EventHandler(this.SoundsCheckBox_CheckedChanged);
+            // 
             // SettingsForm
             // 
             this.AcceptButton = this.SaveBtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.CancelBtn;
-            this.ClientSize = new System.Drawing.Size(460, 263);
+            this.ClientSize = new System.Drawing.Size(460, 297);
+            this.Controls.Add(this.SoundsCheckBox);
             this.Controls.Add(this.NotificationsCheckBox);
             this.Controls.Add(this.HotKeyTextBox);
             this.Controls.Add(this.label2);
@@ -140,5 +153,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox HotKeyTextBox;
         private System.Windows.Forms.CheckBox NotificationsCheckBox;
+        private System.Windows.Forms.CheckBox SoundsCheckBox;
     }
 }

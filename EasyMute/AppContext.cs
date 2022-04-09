@@ -72,6 +72,9 @@ namespace EasyMute
             {
                 var muted = captureDevice.ToggleMute();
 
+                if (Settings.Default.PlaySounds)
+                    using (var sound = new SoundPlayer(muted ? Resources.mic_muted : Resources.mic_activated)) sound.Play();
+
                 UpdateTrayIcon(muted);
 
                 if (Settings.Default.ShowNotifications)

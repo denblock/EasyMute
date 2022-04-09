@@ -61,13 +61,25 @@ namespace EasyMute.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool ShowNotifications {
             get {
                 return ((bool)(this["ShowNotifications"]));
             }
             set {
                 this["ShowNotifications"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool PlaySounds {
+            get {
+                return ((bool)(this["PlaySounds"]));
+            }
+            set {
+                this["PlaySounds"] = value;
             }
         }
     }

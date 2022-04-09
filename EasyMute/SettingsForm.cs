@@ -34,6 +34,7 @@ namespace EasyMute
 
             HotKeyTextBox.Text = GetHotKeyString();
 
+            SoundsCheckBox.Checked = Settings.Default.PlaySounds;
             NotificationsCheckBox.Checked = Settings.Default.ShowNotifications;
         }
 
@@ -62,6 +63,11 @@ namespace EasyMute
 
                 HotKeyTextBox.Text = GetHotKeyString();
             }
+        }
+
+        private void SoundsCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            Settings.Default.PlaySounds = SoundsCheckBox.Checked;
         }
 
         private void NotificationsCheckBox_CheckedChanged(object sender, EventArgs e)
